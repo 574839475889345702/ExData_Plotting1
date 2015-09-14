@@ -1,5 +1,5 @@
 #generate multiplot
-plot4 <- function()
+plot4 <- function(subpower)
 {
   png(filename = "plot4.png")
   

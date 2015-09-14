@@ -1,5 +1,5 @@
 # Generate Plot of Global Active Power
-plot2 <- function()
+plot2 <- function(subpower)
 {
   png(filename = "plot2.png")
   

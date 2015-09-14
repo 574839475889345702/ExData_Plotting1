@@ -7,11 +7,11 @@ globalPowerGraphs<- function()
 {
   power <- read.csv("data/household_power_consumption.txt",sep=";",stringsAsFactors=FALSE,na.strings = "?")
   power$Date <- as.Date(power$Date, "%d/%m/%Y")
-  subpower$Time <- strptime(paste(subpower$Date,subpower$Time), "%Y-%m-%d %H:%M:%S")
   subpower <- subset(power,Date <= as.Date("2007-02-02") & Date >= as.Date("2007-02-01")  )
+  subpower$Time <- strptime(paste(subpower$Date,subpower$Time), "%Y-%m-%d %H:%M:%S")
   
-  plot1()
-  plot2()
-  plot3()
-  plot4()
+  plot1(subpower)
+  plot2(subpower)
+  plot3(subpower)
+  plot4(subpower)
 }

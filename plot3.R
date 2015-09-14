@@ -1,5 +1,5 @@
 # Generate Plot of Energy Sub Metering
-plot3 <- function()
+plot3 <- function(subpower)
 {
   png(filename = "plot3.png")
   

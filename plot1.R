@@ -1,5 +1,5 @@
 # Generate Histogram of Global Active Power
-plot1 <- function()
+plot1 <- function(subpower)
 {
   png(filename = "plot1.png")
 
